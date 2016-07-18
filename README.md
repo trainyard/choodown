@@ -44,6 +44,7 @@ return html`
 ## Example
 
 You can see a full working example by cloning this repo:
+
 1. clone this repo
 2. run `npm install`
 3. run `npm start`
