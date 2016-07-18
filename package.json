@@ -1,0 +1,28 @@
+{
+  "name": "choodown",
+  "version": "0.0.1",
+  "description": "A simple markdown component for choo-js",
+  "main": "choodown.js",
+  "scripts": {
+    "start": "budo -p 8080 client.js"
+  },
+  "keywords": ["markdown", "choo", "choo-component"],
+  "contributors": [
+    {
+      "name" : "Ronn Ross",
+      "email" : "ronn.ross@gmail.com",
+      "url" : "https://github.com/ronnross"
+    },
+    {
+      "name": "Matt McFarland",
+      "email" : "contact@mattmcfarland.com",
+      "url" : "https://github.com/MattMcFarland"
+    }
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "budo": "^8.3.0",
+    "choo": "^3.1.2",
+    "marked": "^0.3.5"
+  }
+}
