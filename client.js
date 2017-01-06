@@ -13,9 +13,8 @@ app.model({
     mode: 'EDIT'
   },
   reducers: {
-    updateText: (data, state) => ({text: data}),
-    updateMode: (mode, state) => ({mode}),
-    toggleMode: (mode, state) => ({mode: state.mode === PREVIEW ? EDIT : PREVIEW})
+    updateText: (state, data) => ({text: data}),
+    toggleMode: (state, data) => ({mode: state.mode === PREVIEW ? EDIT : PREVIEW})
   }
 });
 
@@ -34,9 +33,7 @@ const mainView = (state, prev, send) => {
     </main>`
   };
 
-  app.router(route => [
-    route('/', mainView)
-  ]);
+  app.router(['/', mainView]);
 
 const tree = app.start();
 document.body.appendChild(tree);
